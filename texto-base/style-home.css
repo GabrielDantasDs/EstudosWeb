@@ -1,0 +1,50 @@
+#titulo-principal{
+    text-align: left;
+    padding-left: 20px;
+}
+body {
+    text-align: center;
+
+}
+#ConteudoPrincipal{
+    background-color:lawngreen;
+}
+p {
+    text-align: center;
+    font-size: 20px;
+}
+#missao {
+color: brown;
+
+}
+
+#banner {
+    width: 100%;
+    height: 250px;
+}
+#beneficios {
+    /*background-image:url("C:/Users/Gabriel/Documents/Alura/HtmlCss/beneficios/beneficios.jpg");*/
+    /*height: 853px;*/
+    /*width: 1280px;*/
+    /*background-size: cover;*/
+}
+.tituloCentralizado{
+    text-align: center;
+    margin: 5px;  
+}
+ul{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 200px;
+    padding-bottom: 100px;
+}
+#imgBeneficio{
+width: 50%;
+padding-bottom: 0px;
+}
+.itemBeneficio{
+    color: crimson;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: justify;
+}
