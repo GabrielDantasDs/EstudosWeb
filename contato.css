@@ -1,0 +1,32 @@
+form{
+    width: 100%;
+    /*text-align: center;*/
+    justify-content: center;
+    align-content: center;
+    padding-left: 20px;
+    margin-right: 0%;
+    display: inline-block;
+    background-image: url("Pagina-Produtos/bg.jpg");
+    box-sizing: border-box;
+}
+form label, form p {
+    display: block;
+    margin-top: 20px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.input-padrao {
+    display: block;
+}
+form select{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#imagem-contato{
+    height: 216px;
+    width: 45%;
+    display: inline-block;
+}
