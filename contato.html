@@ -12,7 +12,7 @@
         <header>
             <div class="caixa">
                 <h1>
-                    <img src="Pagina-Produtos/logo.png">
+                    <img src="Pagina-Produtos/logo.png" alt="logo Barbearia Alura">
                 </h1>
                 <nav>
                     <ul>
@@ -24,23 +24,24 @@
             </div>
             </header>
             <main>
-                <div>
+                <fieldset>
                 <form>
+                    <legend>Contato:</legend>
                     <label for="inputNome">Nome e Sobrenome: </label>
-                    <input type="text" id="inputNome" class="input-padrao">
+                    <input type="text" id="inputNome" class="input-padrao" required>
                     <label for="inputTelefone">Telefone: </label>
-                    <input type="number" id="inputTelefone" class="input-padrao">
+                    <input type="tel" id="inputTelefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
                     <label for="inputEmail">Email: </label>
-                    <input type="text" id="inputEmail" class="input-padrao">
+                    <input type="email" id="inputEmail" class="input-padrao" required placeholder="seuemail@seudominio.com.br">
                     <label for="area-texto">Mensagem: </label>
                     <textarea cols="30" rows="30" id="area-texto" class="input-padrao"></textarea>
-                    <p id="paragrafo-contato">Como prefere o contato: </p>
+                    <legend id="paragrafo-contato">Como prefere o contato: </legend>
                     <label for="radio-contato-email">
                         <input type="radio" id="radio-contato-email" class="radio-class"value="email" name="grupo-contato">
                         Email
                     </label>
                     <label for="radio-contato-whatsapp">
-                        <input type="radio" id="radio-contato-whatsapp" class="radio-class" value="whatsApp" name="grupo-contato"> 
+                        <input type="radio" id="radio-contato-whatsapp" class="radio-class" value="whatsApp" name="grupo-contato" checked> 
                         WhatsApp
                     </label>
                     <label for="radio-contato-telefone">
@@ -48,7 +49,7 @@
                         Email
                     </label>
                     <label for="check-box-novidades">
-                        <input type="checkbox" id="check-box-novidades" value="novidadesEmail">
+                        <input type="checkbox" id="check-box-novidades" value="novidadesEmail" checked>
                         Deseja receber novidades por Email
                     </label>
                     <label for="select-periodo">Qual periodo prefere ser atendido</label>
@@ -57,14 +58,35 @@
                         <option>Tarde</option>
                         <option>Noite</option>
                     </select>
-                    <input type="submit" value="Enviar Formulario">
+                    <input type="submit" value="Enviar Formulario" class="enviar">
                 </form>
-                </div>
+                </fieldset>
+                <table class="tabela-horarios">
+                    <thead
+                        <tr>
+                            <td class="td-cabecalho">Dia</td>
+                            <td class="td-cabecalho">Horario</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>Das 08:00 as 20:00hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>Das 08:00 as 20:00hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>Das 08:00 as 20:00hrs</td>
+                    </tr>
+                    </tbody>
+                </table>
             </main>
             <footer>
-                <img src="Pagina-Produtos/logo-branco.png">
+                <img src="Pagina-Produtos/logo-branco.png" alt="logo em branco da Barbearia Alura">
                 <p class="copyright">&copy; Corypright Alura - 2021</p>
-
             </footer>
     </body>
 </html>

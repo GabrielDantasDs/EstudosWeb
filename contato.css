@@ -1,3 +1,6 @@
+main{
+    background-image: url("Pagina-Produtos/bg.jpg");
+}
 form{
     width: 100%;
     /*text-align: center;*/
@@ -6,15 +9,18 @@ form{
     padding-left: 20px;
     margin-right: 0%;
     display: inline-block;
-    background-image: url("Pagina-Produtos/bg.jpg");
+    /*background-image: url("Pagina-Produtos/bg.jpg");*/
     box-sizing: border-box;
 }
-form label, form p {
+form label, form legend {
     display: block;
     margin-top: 20px;
     color:white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
+}
+fieldset{
+    display: inline-block;
 }
 .input-padrao {
     display: block;
@@ -29,4 +35,39 @@ form select{
     height: 216px;
     width: 45%;
     display: inline-block;
+}
+.enviar{
+background-color: rgb(201, 156, 10);
+padding: 10px 5px;
+color: white;
+font-size: 18px;
+font-weight: bold;
+width: 23%;
+transition: 0.5s all;
+}
+.enviar:hover{
+    background-color: darkorange;
+    transform: scale(1.2) rotate(3deg);
+}
+.tabela-horarios{
+    vertical-align: top;
+    width: 50%;
+    height: 30%;
+    margin-top:18% ;
+    margin-bottom: 25%;
+    display: inline-block;
+}
+.tabela-horarios td {
+    font-size: 33px;
+    color: white;
+    font-weight: bold;
+    border-style:ridge;
+    border-color: darkorange;
+    border-radius: 10px;
+    border-width: 5px;
+    width: 50%;
+    padding: 20px;
+}
+.td-cabecalho{
+    background-color: rgb(139, 92, 3);
 }
