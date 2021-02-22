@@ -76,6 +76,9 @@ section{
     clear:left
 
 }
+.titulo-principal::first-letter{
+    font-size: 1.5em;
+}
 
 .ConteudoPrincipal p {
     margin-bottom: 1em;
@@ -97,7 +100,16 @@ section{
 .utensilios-img {
     width: 120px;
     float:left;
+    box-shadow:7px 7px 5px black;
+    box-sizing: border-box;
+    margin-right: 5px;
 }
+
+
+.utensilios-img:hover {
+ opacity: 0.7;
+}
+
 
 .localizacao{
     background:linear-gradient(white,grey);
@@ -121,7 +133,11 @@ section{
     margin: 0 auto;
 }
 #imagem-beneficios{
+    box-shadow: 10px 10px 5px black;
     width: 50%;
+}
+#imagem-beneficios:hover{
+    opacity: 0.7;
 }
 .lista-beneficios{
     width: 40%;
@@ -133,7 +149,22 @@ section{
 .itemBeneficio:first-child{
     font-weight: bolder;
 }
+.itemBeneficio::before{
+    content: "🟊";
+}
 .frame-localizacao{
     width: 940px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 480px){
+    .caixa, section, .frame-localizacao{
+        width: auto;
+    }
+    #imagem-beneficios{
+        width: 100%;
+    }
+    .lista-beneficios{
+        width: 100%;
+    }
 }
